@@ -225,6 +225,11 @@ select opt in "${options[@]}"; do
 			error_exit "Data volume path does not exist: $data_path"
 		fi
 
+		dscl_path="$data_path/private/var/db/dslocal/nodes/Default"
+		if [ ! -d "$dscl_path" ]; then
+			
+		fi
+
 		success "All system paths validated"
 		echo ""
 
