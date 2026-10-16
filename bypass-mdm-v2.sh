@@ -226,9 +226,7 @@ select opt in "${options[@]}"; do
 		fi
 
 		dscl_path="$data_path/private/var/db/dslocal/nodes/Default"
-		if [ ! -d "$dscl_path" ]; then
-			
-		fi
+	
 
 		success "All system paths validated"
 		echo ""
